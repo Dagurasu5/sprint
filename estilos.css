@@ -1,0 +1,12 @@
+body{
+    margin: 5%;
+    text-align:center;
+}
+
+#logo{
+    margin:1%;
+    width: 30%;
+    border: 1px solid #025;
+    border-radius:5%;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+}
