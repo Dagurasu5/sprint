@@ -3,6 +3,20 @@ body{
     text-align:center;
 }
 
+#header{
+    margin: 2%;
+    display: block;
+    text-align: center;
+    align-items: center;
+}
+
+#form-registro{
+    text-align:center;
+    align-items: center;
+    display: block;
+    margin: 1%;
+}
+
 #logo{
     margin:1%;
     width: 30%;
