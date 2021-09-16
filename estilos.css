@@ -1,6 +1,18 @@
 body{
-    margin: 5%;
     text-align:center;
+    background-image:url(https://acortar.link/eYnbm5);
+    background-repeat:no-repeat;
+    background-size: 100%;
+}
+
+.registro{
+    background-color: #fff;
+    margin: 2%;
+    width: 30%;
+    height: auto;
+    display:block;
+    align-items:center;
+    border-radius: 10%;
 }
 
 #header{
@@ -20,7 +32,4 @@ body{
 #logo{
     margin:1%;
     width: 30%;
-    border: 1px solid #025;
-    border-radius:5%;
-    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
 }
