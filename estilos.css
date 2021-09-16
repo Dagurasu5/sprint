@@ -1,12 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    margin: 5%;
-    text-align:center;
+    margin: 2%;
+    padding: 2%;
+    background-color: aqua;
 }
 
 #logo{
-    margin:1%;
-    width: 30%;
-    border: 1px solid #025;
-    border-radius:5%;
-    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+    height: auto;
+    margin: auto;
+    padding: 1%;
+    width: 35%;
+}
+
+#form-registro{
+    width: 35%;
+    height: auto;
+    background-color: #fff;
+    padding: 1%;
+    margin: auto;
+    border-radius: 2%;
 }
