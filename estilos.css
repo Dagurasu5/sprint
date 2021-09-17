@@ -1,13 +1,154 @@
-body{
-    margin: 5%;
-    background-color: skyblue;
-    text-align:center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#logo{
-    margin:1%;
-    width: 30%;
-    border: 1px solid #025;
-    border-radius:5%;
+body {
+    margin: 0.5%;
+    padding: 0.5%;
+    width: auto;
+    height: auto;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(91, 91, 93, 1) 0%, rgba(191, 191, 191, 1) 50%, rgba(91, 91, 93, 1) 100%);
+    background-position: center;
+}
+
+#header {
+    width: auto;
+    height: auto;
+    padding: 1%;
+    margin: auto;
+    border-radius: 2%;
+    text-align: center;
+}
+
+#logo {
+    height: auto;
+    margin: auto;
+    padding: 1%;
+    width: 35%;
+}
+
+#form-registro {
+    width: 35%;
+    height: auto;
+    background-color: rgba(2, 15, 71, 0.75);
+    padding: 1%;
+    margin: auto;
+    border-radius: 2%;
+    align-items: center;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+#username {
+    padding: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #020F47;
+}
+
+#contrasena {
+    padding: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #020F47;
+}
+
+#pregunta {
+    padding: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #020F47;
+}
+
+#respuesta {
+    padding: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #020F47;
+}
+
+#btn-registrar {
+    padding: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: auto;
+    border-radius: 5px;
+    color: #fff !important;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid;
+    border-color: #318aac;
+    transition: all 1s ease;
+    position: relative;
+}
+
+#btn-registrar:hover {
+    background: #318aac;
+    color: #fff !important;
+}
+
+#form-registro p {
+    text-align: justify;
+    font-size: 20px;
+    color: white;
+}
+
+#form-registro a {
+    color: white;
+    text-decoration: none;
+}
+
+#form-login {
+    width: 35%;
+    height: auto;
+    background-color: rgba(2, 15, 71, 0.8);
+    padding: 1%;
+    margin: auto;
+    border-radius: 2%;
+    align-items: center;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+#form-login p {
+    text-align: justify;
+    font-size: 20px;
+    color: white;
+}
+
+#btn-submit-form {
+    padding: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: auto;
+    border-radius: 5px;
+    color: #fff !important;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid;
+    border-color: #318aac;
+    transition: all 1s ease;
+    position: relative;
+}
+
+#btn-submit-form:hover {
+    background: #318aac;
+    color: #fff !important;
 }
