@@ -7,7 +7,18 @@
 body{
     margin: 2%;
     padding: 2%;
-    background-color: aqua;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(91, 91, 93, 1) 0%, rgba(191, 191, 191, 1) 50%, rgba(91, 91, 93, 1) 100%);
+    background-position: center;
+}
+
+#header{
+    width: auto;
+    height: auto;
+    padding: 1%;
+    margin: auto;
+    border-radius: 2%;
+    text-align: center;
 }
 
 #logo{
@@ -20,8 +31,94 @@ body{
 #form-registro{
     width: 35%;
     height: auto;
-    background-color: #fff;
+    background-color: rgba(2, 15, 71, 0.8);
     padding: 1%;
     margin: auto;
     border-radius: 2%;
+    align-items: center;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+#username{
+    padding: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #020F47;
+}
+
+#contrasena{
+    padding: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #020F47;
+}
+
+#pregunta{
+    padding: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #020F47;
+}
+
+#respuesta{
+    padding: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #020F47;
+}
+
+#btn-registrar{
+    padding: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 40%;
+    border-radius: 5px;
+}
+
+#form-registro p {
+    text-align: justify;
+    font-size: 20px;
+    color: white;
+}
+
+#form-registro a {
+    color: white;
+    text-decoration: none;
+}
+
+#form-login{
+    width: 35%;
+    height: auto;
+    background-color: rgba(2, 15, 71, 0.8);
+    padding: 1%;
+    margin: auto;
+    border-radius: 2%;
+    align-items: center;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+#form-login p {
+    text-align: justify;
+    font-size: 20px;
+    color: white;
+}
+
+#btn-submit-form{
+    padding: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 40%;
+    border-radius: 5px;
 }
