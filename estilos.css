@@ -81,8 +81,22 @@ body{
     padding: 2%;
     margin-bottom: 2%;
     margin-top: 2%;
-    width: 40%;
+    width: auto;
     border-radius: 5px;
+    color: #fff !important;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: rgba(0,0,0,0);
+    border: 2px solid;
+    border-color: #318aac;
+    transition: all 1s ease;
+    position: relative;
+}
+
+#btn-registrar:hover {
+    background: #318aac;
+    color: #fff !important;
 }
 
 #form-registro p {
@@ -119,6 +133,20 @@ body{
     padding: 2%;
     margin-bottom: 2%;
     margin-top: 2%;
-    width: 40%;
+    width: auto;
     border-radius: 5px;
+    color: #fff !important;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: rgba(0,0,0,0);
+    border: 2px solid;
+    border-color: #318aac;
+    transition: all 1s ease;
+    position: relative;
+}
+
+#btn-submit-form:hover {
+    background: #318aac;
+    color: #fff !important;
 }
