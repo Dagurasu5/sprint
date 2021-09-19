@@ -31,7 +31,7 @@ body{
 }
 
 #form-registro{
-    width: 35%;
+    width: 50%;
     height: auto;
     background-color: rgba(2, 15, 71, 0.75);
     padding: 1%;
@@ -65,7 +65,7 @@ body{
     padding: 2%;
     margin-bottom: 2%;
     margin-top: 2%;
-    width: 100%;
+    width: 80%;
     border-radius: 5px;
     border: 2px solid #020F47;
 }
@@ -74,7 +74,7 @@ body{
     padding: 2%;
     margin-bottom: 2%;
     margin-top: 2%;
-    width: 100%;
+    width: 80%;
     border-radius: 5px;
     border: 2px solid #020F47;
 }
@@ -102,7 +102,8 @@ body{
 }
 
 #form-registro p {
-    text-align: justify;
+    text-align: left;
+    margin-left: 10%;
     font-size: 20px;
     color: white;
 }
@@ -114,7 +115,7 @@ body{
 
 /*Codigo para el login.html*/
 
-.container{
+#container{
     width: 80%;
     margin: auto auto;
     height: auto;
@@ -165,6 +166,31 @@ body{
 /*Media Query*/
 
 @media screen and (max-width: 800px) {
+
+    #btn-registrar{
+        padding: 1%;
+        margin-bottom: 1%;
+        margin-top: 1%;
+        width: auto;
+        border-radius: 2px;
+        color: #fff !important;
+        font-size: 15px;
+        font-weight: 250;
+        padding: 0.5em 1.2em;
+        background: rgba(0,0,0,0);
+        border: 2px solid;
+        border-color: #318aac;
+        transition: all 1s ease;
+        position: relative;
+    }
+    
+    #form-registro p {
+        text-align: left;
+        margin-left: 10%;
+        font-size: 15px;
+        color: white;
+    }
+
     #form-login p {
         text-align: left;
         margin-left: 10%;
