@@ -112,8 +112,16 @@ body{
     text-decoration: none;
 }
 
+/*Codigo para el login.html*/
+
+.container{
+    width: 80%;
+    margin: auto auto;
+    height: auto;
+}
+
 #form-login{
-    width: 35%;
+    width: 50%;
     height: auto;
     background-color: rgba(2, 15, 71, 0.8);
     padding: 1%;
@@ -126,7 +134,8 @@ body{
 }
 
 #form-login p {
-    text-align: justify;
+    text-align: left;
+    margin-left: 10%;
     font-size: 20px;
     color: white;
 }
@@ -151,4 +160,32 @@ body{
 #btn-submit-form:hover {
     background: #318aac;
     color: #fff !important;
+}
+
+/*Media Query*/
+
+@media screen and (max-width: 800px) {
+    #form-login p {
+        text-align: left;
+        margin-left: 10%;
+        font-size: 15px;
+        color: white;
+    }
+
+    #btn-submit-form{
+        padding: 1%;
+        margin-bottom: 1%;
+        margin-top: 1%;
+        width: auto;
+        border-radius: 2px;
+        color: #fff !important;
+        font-size: 15px;
+        font-weight: 250px;
+        padding: 0.5em 1.2em;
+        background: rgba(0,0,0,0);
+        border: 2px solid;
+        border-color: #318aac;
+        transition: all 1s ease;
+        position: relative;
+    }
 }
