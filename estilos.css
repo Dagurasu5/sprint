@@ -14,8 +14,13 @@ body {
     background-position: center;
 }
 
+<<<<<<< HEAD
 #header {
     width: auto;
+=======
+#header{
+    width: 100%;
+>>>>>>> develop
     height: auto;
     padding: 1%;
     margin: auto;
@@ -27,11 +32,16 @@ body {
     height: auto;
     margin: auto;
     padding: 1%;
-    width: 35%;
+    width: 52%;
 }
 
+<<<<<<< HEAD
 #form-registro {
     width: 35%;
+=======
+#form-registro{
+    width: 50%;
+>>>>>>> develop
     height: auto;
     background-color: rgba(2, 15, 71, 0.75);
     padding: 1%;
@@ -47,7 +57,7 @@ body {
     padding: 2%;
     margin-bottom: 2%;
     margin-top: 2%;
-    width: 100%;
+    width: 80%;
     border-radius: 5px;
     border: 2px solid #020F47;
 }
@@ -56,7 +66,7 @@ body {
     padding: 2%;
     margin-bottom: 2%;
     margin-top: 2%;
-    width: 100%;
+    width: 80%;
     border-radius: 5px;
     border: 2px solid #020F47;
 }
@@ -65,7 +75,7 @@ body {
     padding: 2%;
     margin-bottom: 2%;
     margin-top: 2%;
-    width: 100%;
+    width: 80%;
     border-radius: 5px;
     border: 2px solid #020F47;
 }
@@ -74,7 +84,7 @@ body {
     padding: 2%;
     margin-bottom: 2%;
     margin-top: 2%;
-    width: 100%;
+    width: 80%;
     border-radius: 5px;
     border: 2px solid #020F47;
 }
@@ -102,7 +112,8 @@ body {
 }
 
 #form-registro p {
-    text-align: justify;
+    text-align: left;
+    margin-left: 10%;
     font-size: 20px;
     color: white;
 }
@@ -112,8 +123,21 @@ body {
     text-decoration: none;
 }
 
+<<<<<<< HEAD
 #form-login {
     width: 35%;
+=======
+/*Codigo para el login.html*/
+
+#container{
+    width: 80%;
+    margin: auto auto;
+    height: auto;
+}
+
+#form-login{
+    width: 50%;
+>>>>>>> develop
     height: auto;
     background-color: rgba(2, 15, 71, 0.8);
     padding: 1%;
@@ -126,7 +150,8 @@ body {
 }
 
 #form-login p {
-    text-align: justify;
+    text-align: left;
+    margin-left: 10%;
     font-size: 20px;
     color: white;
 }
@@ -151,4 +176,94 @@ body {
 #btn-submit-form:hover {
     background: #318aac;
     color: #fff !important;
+<<<<<<< HEAD
 }
+=======
+}
+
+/*Media Query*/
+
+@media screen and (max-width: 800px) {
+
+    #logo{
+        height: auto;
+        margin: auto;
+        padding: 1%;
+        width: 82%;
+    }
+
+    #form-registro{
+        width: 80%;
+        height: auto;
+        background-color: rgba(2, 15, 71, 0.75);
+        padding: 1%;
+        margin: auto;
+        border-radius: 2%;
+        align-items: center;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    #btn-registrar{
+        padding: 1%;
+        margin-bottom: 1%;
+        margin-top: 1%;
+        width: auto;
+        border-radius: 2px;
+        color: #fff !important;
+        font-size: 15px;
+        font-weight: 250;
+        padding: 0.5em 1.2em;
+        background: rgba(0,0,0,0);
+        border: 2px solid;
+        border-color: #318aac;
+        transition: all 1s ease;
+        position: relative;
+    }
+    
+    #form-registro p {
+        text-align: left;
+        margin-left: 10%;
+        font-size: 15px;
+        color: white;
+    }
+
+    #form-login{
+        width: 80%;
+        height: auto;
+        background-color: rgba(2, 15, 71, 0.8);
+        padding: 1%;
+        margin: auto;
+        border-radius: 2%;
+        align-items: center;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    #form-login p {
+        text-align: left;
+        margin-left: 10%;
+        font-size: 15px;
+        color: white;
+    }
+
+    #btn-submit-form{
+        padding: 1%;
+        margin-bottom: 1%;
+        margin-top: 1%;
+        width: auto;
+        border-radius: 2px;
+        color: #fff !important;
+        font-size: 15px;
+        font-weight: 250px;
+        padding: 0.5em 1.2em;
+        background: rgba(0,0,0,0);
+        border: 2px solid;
+        border-color: #318aac;
+        transition: all 1s ease;
+        position: relative;
+    }
+}
+>>>>>>> develop
