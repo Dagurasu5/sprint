@@ -18,26 +18,44 @@
     
         <form id="form-registro">
 
-            <label for="nombre"><p>Username</p></label>
-            <input type="text" id="username" placeholder="Username">
+            <label for="username">
+                <p>Username</p>
+                <input type="text" id="username" placeholder="Username">
+            </label>
+
             <br>
-            <label for="contrasena"><p>Contrasena</p></label>
-            <input type="password" id="contrasena" placeholder="Contraseña">
+
+            <label for="contrasena">
+                <p>Contrasena</p>
+                <input type="password" id="contrasena" placeholder="Contraseña">
+            </label>
+
             <br>
-            <label for="security-q"><p>Pregunta seguridad</p></label>
-            <select name="security-q" id="pregunta">
-                <option value="1">¿Animal favorito?</option>
-                <option value="2">¿Color favorito?</option>
-                <option value="3">¿Comida favorita?</option>
-                <option value="4">¿Cual es el nombre de tu primer mascota?</option>
-                <option value="5">¿Donde naciste?</option>
-            </select>
+
+            <label for="pregunta">
+                <p>Pregunta seguridad</p>
+                <select name="security-q" id="pregunta">
+                    <option value="1">¿Animal favorito?</option>
+                    <option value="2">¿Color favorito?</option>
+                    <option value="3">¿Comida favorita?</option>
+                    <option value="4">¿Cual es el nombre de tu primer mascota?</option>
+                    <option value="5">¿Donde naciste?</option>
+                </select>
+            </label>
+
             <br>
-            <label for="respuesta"><p>Respuesta seguridad</p></label>
-            <input type="text" id="respuesta" placeholder="Ingrese su respuesta">
+
+            <label for="respuesta">
+                <p>Respuesta seguridad</p>
+                <input type="text" id="respuesta" placeholder="Ingrese su respuesta">
+            </label>
+
             <br>
+
             <button id="btn-registrar">Registrarse</button>
+
             <br>
+
             <a href="login.html" id="enlace-login">Login</a>
 
         </form>
