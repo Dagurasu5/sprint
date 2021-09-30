@@ -19,16 +19,19 @@
     
         <form action="" class="form-registro" id="form-registro">
 
+            <!-- Grupo: Usuario -->
             <label for="username">
                 <p>Username</p>
-                <input type="text" id="username" placeholder="Username">
+                <input type="text" id="username" name="username" placeholder="Username" onchange="checkUsername()">
             </label>
-            <br>
+
+            <!-- Grupo: Contrseña -->
             <label for="contrasena">
                 <p>Contrasena</p>
-                <input type="password" id="contrasena" placeholder="Contraseña">
+                <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña">
             </label>
-            <br>
+
+            <!-- Grupo: Preguntas -->
             <label for="pregunta">
                 <p>Pregunta seguridad</p>
                 <select name="security-q" id="pregunta">
@@ -39,13 +42,14 @@
                     <option value="5">¿Donde naciste?</option>
                 </select>
             </label>
-            <br>
+
+            <!-- Grupo: Respuesta -->
             <label for="respuesta">
                 <p>Respuesta seguridad</p>
-                <input type="text" id="respuesta" placeholder="Ingrese su respuesta">
+                <input type="text" id="respuesta" name="respuesta" placeholder="Ingrese su respuesta">
             </label>
             <br>
-            <button id="btn-registrar" onclick="checkRespuestaSeg">Registrarse</button>
+            <button id="btn-registrar">Registrarse</button>
             <br>
             <a href="login.html" id="enlace-login">Login</a>
 
@@ -53,7 +57,8 @@
 
     </div>
 
-    <script src="js/form.js"></script>
+    <script src="./js/form.js"></script>
+
 
 </body>
 </html>

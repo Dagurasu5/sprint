@@ -1,33 +1,50 @@
+//FUNCION PARA VALIDAR USUARIO
+
+function checkUsername(){
+
+	let valor = document.getElementById("username").value;
+
+	if(valor.length == 0){
+		alert("El nombre de usuario es requerido.");
+		return false;
+	}
+	else if(valor.length > 30){
+		alert("El nombre de usuario debe tener una longitud máxima de 30 caracteres.");
+		return false;
+	}
+	else{
+		return true;
+	}
+}
+
+//FUNCION PARA VALIDAR LA CONTRASEÑA
+
+function checkContrasena(){
+
+	let valor = document.getElementById("contrasena").value;
+
+	if(valor.match(/[a-z]/) && valor.match(/[A-Z]/) && valor.match(/[0-9]/) && valor.length >= 8){ 
+		return true;
+	}
+	else{ 
+		alert("La contraseña debe contener por lo menos una letra mayúscula, una minúscula, un número y una longitud mayor o igual a 8 dígitos.");
+		return false;
+	}
+}
+
 //FUNCION PARA VALIDAR LA RESPUESTA DE SEGURIDAD
 
-/*const form = document.getElementById('form-registro');
-const inputs = document.querySelectorAll('#form-registro input');
+function checkRespuestaSeg(){
 
-const expresiones{
-    respuesta: /^[a-zA-Z0-9\_\-]{4,16}$/;
+	let valor = document.getElementById("respuesta");
+
+	if(valor == null || valor.match(/[ !"#$%&'()*+,\-./:;<=>?@[\\\]^_`{|}~]/) || valor.length > 30 || valor.length == 0){ 
+		alert("La respuesta solo debe contener caracteres alfanuméricos, debe tener una longitud no mayor a 30 dígitos y no puede dejarse vacía");
+		return false;
+	}
+	else{ 
+		return true;
+	}
 }
 
-form.addEventListener('btn-registrar', (e) => ) {
-    e.preventDefault();
-}*/
-
-function checkRespuestaSeg(valor) {
-    if (valor == "" || valor >= 30){
-        alert("el campo Respuesta no puede estar vacio")
-        return false;
-    }
-    else{
-        if (valor.length >= 30){
-            alert("El campo Respuesta de seguridad tiene que tener maximo 30 caracteres");
-            return false;
-        }
-        else{
-            if (/^[a-zA-Z0-9\_\-]{4,16}$/.test(valor)){
-                alert("La Respuesta no puede tener caracteres especiales")
-                return false;
-            }
-        }
-    }
-}
-
-module.exports=checkRespuesta;
+module.exports={checkUsername, checkContrasena, checkRespuestaSeg}
