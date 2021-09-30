@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>Power fit 9</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <link rel="icon" href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/96c1a88a-2764-44b2-9418-38a6ad9825c0/der2v6e-02c5e22b-54b3-4297-a4ef-8ce053f2664f.png/v1/fill/w_1280,h_1100,strp/logo_power_fit9_by_dagurasu5_der2v6e-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTEwMCIsInBhdGgiOiJcL2ZcLzk2YzFhODhhLTI3NjQtNDRiMi05NDE4LTM4YTZhZDk4MjVjMFwvZGVyMnY2ZS0wMmM1ZTIyYi01NGIzLTQyOTctYTRlZi04Y2UwNTNmMjY2NGYucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.ivf_GIBe9fEXKM3jEBjzBG12bgQKeUPBqQB_TuHmyhU">
 </head>
-
 <body>
 
     <div id="container">
@@ -16,27 +16,49 @@
         <header id="header">
             <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/96c1a88a-2764-44b2-9418-38a6ad9825c0/der2v6e-02c5e22b-54b3-4297-a4ef-8ce053f2664f.png/v1/fill/w_1280,h_1100,strp/logo_power_fit9_by_dagurasu5_der2v6e-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTEwMCIsInBhdGgiOiJcL2ZcLzk2YzFhODhhLTI3NjQtNDRiMi05NDE4LTM4YTZhZDk4MjVjMFwvZGVyMnY2ZS0wMmM1ZTIyYi01NGIzLTQyOTctYTRlZi04Y2UwNTNmMjY2NGYucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.ivf_GIBe9fEXKM3jEBjzBG12bgQKeUPBqQB_TuHmyhU" alt="" id="logo">
         </header>
+    
+        <form action="" class="form-registro" id="form-registro">
 
-        <form id="form-login">
-
-            <label for="username" id="label">
+            <!-- Grupo: Usuario -->
+            <label for="username">
                 <p>Username</p>
-                <input type="text" id="username" placeholder="Username"></input>
+                <input type="text" id="username" name="username" placeholder="Username" onchange="checkUsername()">
             </label>
-            <br>
-            <label for="contrasena" id="label">
+
+            <!-- Grupo: Contrseña -->
+            <label for="contrasena">
                 <p>Contrasena</p>
-                <input type="password" id="contrasena" placeholder="Contraseña"></input>
+                <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña">
+            </label>
+
+            <!-- Grupo: Preguntas -->
+            <label for="pregunta">
+                <p>Pregunta seguridad</p>
+                <select name="security-q" id="pregunta">
+                    <option value="1">¿Animal favorito?</option>
+                    <option value="2">¿Color favorito?</option>
+                    <option value="3">¿Comida favorita?</option>
+                    <option value="4">¿Cual es el nombre de tu primer mascota?</option>
+                    <option value="5">¿Donde naciste?</option>
+                </select>
+            </label>
+
+            <!-- Grupo: Respuesta -->
+            <label for="respuesta">
+                <p>Respuesta seguridad</p>
+                <input type="text" id="respuesta" name="respuesta" placeholder="Ingrese su respuesta">
             </label>
             <br>
-            <input type="submit" id="btn-submit-form"></input>
+            <button id="btn-registrar">Registrarse</button>
+            <br>
+            <a href="login.html" id="enlace-login">Login</a>
 
         </form>
 
     </div>
 
-    <script src="js/form.js"></script>
+    <script src="./js/form.js"></script>
+
 
 </body>
-
 </html>
